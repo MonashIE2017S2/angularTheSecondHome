@@ -23,17 +23,6 @@ export class VisualizationComponent implements OnInit {
 
 
   constructor(private dataService: DataService) { }
-/*
-  ngAfterViewInit() {
-    this.htmlElement = this.element.nativeElement;
-    this.host = D3.select(this.htmlElement);
-    this.dataService.$data.subscribe(data => {
-      this.pieData = data;
-      this.setup();
-      this.buildSVG();
-      this.buildPie();
-    });
-  }*/
 
   ngOnInit() {
     this.htmlElement = this.element.nativeElement;
