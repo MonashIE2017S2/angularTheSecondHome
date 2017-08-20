@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-home-page',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-about-page',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.css']
 })
-export class HomeComponent implements OnInit {
+export class AboutComponent implements OnInit {
   constructor(
     private router: Router
   ) {}

@@ -1,3 +1,11 @@
 .nav-link {
-  cursor:pointer;
+  cursor: pointer;
+}
+
+.item>img {
+  max-width: 100%;
+  max-height: 100%;
+
+  min-height: 80%;
+  min-width: 90%;
 }

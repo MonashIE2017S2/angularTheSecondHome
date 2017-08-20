@@ -6,7 +6,7 @@ import {color} from 'd3-color';
 import {pie} from 'd3-shape';
 
 @Component({
-  selector: 'pie-chart',
+  selector: 'app-pie-chart',
   templateUrl: './visualization.component.html'
 })
 
@@ -80,7 +80,7 @@ export class VisualizationComponent implements OnInit {
   }
 
 private populatePie(arcSelection: D3.Selection<D3.layout.pie.Arc<number>>): void {
-const labelr = this.radius * 0.9;
+const labelr = this.radius * 0.8;
 const pieColor = D3.scaleOrdinal(D3.schemeCategory20c);
 const arc = D3.arc<D3.layout.pie.Arc<number>>()
   .outerRadius(this.radius * 0.7)

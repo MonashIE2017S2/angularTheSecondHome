@@ -1,18 +1,15 @@
-<nav class="navbar navbar-light">
-  <div class="container">
+<header class="header" id="navb">
+  <div>
     <a class="navbar-brand" routerLink="/"><img src="../../../assets/Image/second-home.jpg" alt="The Second Home"></a>
-
-    <!-- Show this for logged out users -->
-    <ul *showAuthed="false"
-      class="nav navbar-nav pull-xs-right">
-
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="nav navbar-nav pull-xs-right menu">
       <li class="nav-item">
         <a class="nav-link"
-          routerLink="/">
+           routerLink="/">
           <h3>Home</h3>
         </a>
       </li>
-
       <li class="nav-item">
         <a class="nav-link"
           routerLink="/visualization"
@@ -23,7 +20,7 @@
 
       <li class="nav-item">
         <a class="nav-link"
-          routerLink="/register"
+          routerLink="/quiz"
           routerLinkActive="active">
           <h3>Quiz</h3>
         </a>
@@ -31,7 +28,7 @@
 
 	  <li class="nav-item">
         <a class="nav-link"
-          routerLink="/register"
+          routerLink="/about"
           routerLinkActive="active">
           <h3>About Us</h3>
         </a>
@@ -40,5 +37,5 @@
     </ul>
 
   </div>
-</nav>
+</header>
 

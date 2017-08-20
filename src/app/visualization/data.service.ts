@@ -6,6 +6,7 @@ import { IData } from './data.interface';
 export class DataService {
   private mockData: IData[] = [
     {label: 'Domestic and family violence', value: 2400},
+    {label: 'Custody transition', value: 200},
     {label: 'Financial difficulties', value: 2000},
     {label: 'Itinerant', value: 100},
     {label: 'Housing crisis', value: 1600},
@@ -15,7 +16,6 @@ export class DataService {
     {label: 'Other accommodation issues', value: 500},
     {label: 'Health issues', value: 400},
     {label: 'Other', value: 800},
-    {label: 'Custody transition', value: 200},
   ];
 
   private dataSubject = new BehaviorSubject<IData[]>(this.mockData);
